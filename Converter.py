@@ -12,7 +12,7 @@ def load (filename):
 tfjs_target_dir = './models'
 
 # Load the model from the .h5 file
-model = load('FaceRecognition_CNN')
+model = load('./models/FaceRecognition_CNN')
 
 # Convert the loaded model (FaceRecognition_CNN.h5 in this example) to the Tensorflow.js format
 tfjs.converters.save_keras_model(model, tfjs_target_dir)
